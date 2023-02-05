@@ -1,3 +1,33 @@
-.header {
-    background-color: aqua;
-}
+body {
+    font-family: Arial, sans-serif;
+    margin:  2%;
+    padding: 2%;
+    background-color: antiquewhite;
+  }
+
+  header {
+    background-image: url('assets/images/Me.jpeg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  header h1 {
+    margin: 0;
+    color: black;
+    font-size: 35px;
+  }
+
+  .profile-picture {
+    width: 10px;
+    height: 10px;
+    border-radius: 25px;
+    margin-right: 20px;
+  }
+
+  nav {
+    margin-left: auto;
+  }
