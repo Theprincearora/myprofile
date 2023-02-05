@@ -21,9 +21,9 @@ body {
     font-size: 35px;
   }
 
-  .profile-picture {
-    width: 10px;
-    height: 10px;
+  .my-picture {
+    width: 300px;
+    height: 400px;
     border-radius: 25px;
     margin-right: 20px;
   }
@@ -31,3 +31,209 @@ body {
   nav {
     margin-left: auto;
   }
+
+  nav ul {
+    background-color: #333;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  nav li {
+    flex-grow: 1;
+    text-align: center;
+  }
+
+  nav a {
+    color: #fff;
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+  }
+
+  main {
+    padding: 20px;
+  }
+  
+  section {
+    margin-bottom: 20px;
+  }
+
+  section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    justify-content: center;
+  }
+  
+  section p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .experience {
+    background-color:cornflowerblue ;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .experience h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    }
+
+    .experience h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .experience p {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .experience a:hover img {
+    transform: scale(1.2);
+    transition: all 0.2s ease-in-out;
+  }
+
+  .experience li{
+    list-style: none;
+    display: flex; 
+    justify-content: center;
+  }
+
+  .portfolio {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+  }
+  
+  .portfolio ul {
+    width: 30%;
+    height: 300px;
+    background-color:cadetblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+  }
+
+  .portfolio h2,
+  .portfolio h3 {
+    margin: 10px 0;
+    text-align: center;
+  }
+  .portfolio img {
+    width: 150px;
+    height: 200px;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .portfolio a img {
+    transition: transform 0.2s;
+  }
+    .portfolio a:hover img {
+        transform: scale(1.25);
+      }
+      
+      form label,
+      form input,
+      form textarea {
+        display: block;
+        margin-bottom: 10px;
+        width: 100%;}
+    
+        .contact {
+          background-color:greenyellow;
+          padding: 20px;
+          border: 1px solid #333;
+          background-image: url(bg-image.jpg);
+          background-size: cover;
+          background-position: center;
+          text-align: center;
+        }     
+
+        @media (min-width: 768px) {
+            .contact {
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+              align-items: center;
+              padding: 40px;
+            }
+          }
+          
+          .contact h2 {
+            margin-bottom: 20px;
+            font-family: "Custom Font", sans-serif;
+            font-size: 36px;
+          }
+          
+          .contact li {
+            margin-bottom: 10px;
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+            animation: slideIn 1s ease-out;
+          }
+          
+          @keyframes slideIn {
+            0% {
+              transform: translateX(-100%);
+            }
+            100% {
+              transform: translateX(0);
+            }
+          }
+          
+          .contact li:hover {
+            background-color: #333;
+            color: #f7f7f7;
+            transform: scale(1.1);
+          }
+          
+          .contact li a {
+            color: #333;
+          }
+          
+          .contact li a:hover {
+            color: #f7f7f7;
+          }
+          
+          .contact li:before {
+            content: "\f095";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            margin-right: 10px;
+            font-size: 24px;
+          }
+          
+           .contact li:first-child:before {
+            content: "\f095";
+          }
+          
+          .contact li:nth-child(2):before {
+            content: "\f0e0";
+          }
+          
+          .contact li:last-child:before {
+            content: "\f041";
+          }
+           
+          
+          
+          footer {
+          background-color: lightgray;
+          color: gray;
+          text-align: center;
+          padding: 20px;
+          }
+        
